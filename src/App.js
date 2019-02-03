@@ -73,7 +73,7 @@ class App extends Component {
           {this.state.displayed.map(card =>
               <Image
               key={JSON.stringify(card)}
-              source={{uri: `/cards/${card.rank}_of_${card.suit}.png`}}
+              source={{uri: `cards/${card.rank}_of_${card.suit}.png`}}
               style={{width: width/10, height: (width/10)*(726/500), marginRight: spacing, marginBottom: spacing}}
               onClick={() => this.click(card)}
             />)}
